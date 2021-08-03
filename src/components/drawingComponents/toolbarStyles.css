@@ -1,0 +1,21 @@
+.toolbar-container{
+    background-color: #eae4e9;
+    height: 70px;
+    padding: 5px;
+}
+
+.tools-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    justify-content: space-evenly;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.art-tool-button{
+    padding: 10px;
+}
