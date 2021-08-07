@@ -1,5 +1,4 @@
 .header-wrapper{
-    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,4 +11,8 @@
 
 .nav div {
     padding-right: 20px;
+}
+
+.header-container {
+    background-color: #cddafd;
 }

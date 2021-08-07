@@ -7,6 +7,7 @@ import {
 import Header from './components/Header'
 import PageHome from './components/PageHome'
 import PageBrowse from './components/PageBrowse'
+import PageUser from './components/PageUser';
 
 import './App.css';
 
@@ -18,11 +19,21 @@ function App() {
         <Header />
 
         <Switch>
-          <Route exact path='/'>
-            <PageHome/>
+          <Route 
+            exact 
+            path='/'
+            component={PageHome}
+          >
           </Route>
-          <Route path='/browse'>
-            <PageBrowse/>
+          <Route 
+            path='/browse' 
+            component={PageBrowse}
+          >
+          </Route>
+          <Route 
+            path='/user/:userId'
+            component={PageUser}
+          >
           </Route>
         </Switch>
       </Router>
