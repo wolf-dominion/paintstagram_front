@@ -2,8 +2,8 @@ import './pageUserStyles.css'
 import { USER } from '../mock-data/userMockData'
 
 function PageUser(props) {
-    
-     const userId = props.match.params.userId
+    const user = USER["user"]
+     // const userId = props.match.params.userId
     
     const displayUserArt = data => {
         return data.map((art, index) => {
@@ -17,10 +17,15 @@ function PageUser(props) {
     
     return (
         <>
-            <div>
-                <h1>User page {userId}</h1>
+            <div className='user-profile-container'>
+                <div className='user-info-container'>
+                    <div className='profile-pic'>
+                        <img alt='' src={user["profileimage"]}/>
+                    </div>
+                    <h1>{user["username"]}</h1>
+                </div>
                 <div className='art-thumbnails-container'>
-                    {displayUserArt(USER["user"]["art"])}
+                    {displayUserArt(user["art"])}
                 </div>
             </div>
         </>
