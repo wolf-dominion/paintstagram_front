@@ -1,0 +1,30 @@
+.browse-description {
+    width: 50%; 
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.art-thumbnails-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: flex-start;
+}
+
+.art-submission {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+}
+
+.thumbnail {
+    padding-top: 15px;
+}
+
+.link-to-artist-profile {
+    width: 50%; 
+    margin: 0 auto;
+    text-align: center;
+}

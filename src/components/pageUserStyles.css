@@ -1,0 +1,18 @@
+.profile-name, .profile-pic {
+    width: 50%; 
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.thumbnail {
+    padding-top: 15px;
+}
+
+.art-thumbnails-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: flex-start;
+}

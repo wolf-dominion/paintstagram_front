@@ -17,25 +17,26 @@ function App() {
 
       <Router>
         <Header />
-
-        <Switch>
-          <Route 
-            exact 
-            path='/'
-            component={PageHome}
-          >
-          </Route>
-          <Route 
-            path='/browse' 
-            component={PageBrowse}
-          >
-          </Route>
-          <Route 
-            path='/user/:userId'
-            component={PageUser}
-          >
-          </Route>
-        </Switch>
+        <div className='web-page-content-container'>
+          <Switch>
+            <Route 
+              exact 
+              path='/'
+              component={PageHome}
+            >
+            </Route>
+            <Route 
+              path='/browse' 
+              component={PageBrowse}
+            >
+            </Route>
+            <Route 
+              path='/user/:userId'
+              component={PageUser}
+            >
+            </Route>
+          </Switch>
+        </div>
       </Router>
     </div>
   );

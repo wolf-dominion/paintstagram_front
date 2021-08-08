@@ -1,9 +1,9 @@
 .drawing-container{
-    margin: 20px;
     padding: 20px;
     height: 500px;
     width: 500px;
     background-color: rgb(85, 85, 85);
+    margin: 0 auto;
 
 }
 

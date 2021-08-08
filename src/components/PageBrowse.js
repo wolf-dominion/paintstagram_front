@@ -11,10 +11,10 @@ function PageBrowse() {
         return data.map(art => {
             return(
                 <div className='art-submission' key={art.id}>
-                    <img alt='art' src={art["url"]} />
-                    <Link to={`/user/${art.artistid}`}>
+                    <Link className='link-to-artist-profile' to={`/user/${art.artistid}`}>
                         artist: {art.artistid}
                     </Link>
+                    <img className='thumbnail' alt='art' src={art["url"]} />
                 </div>
             )
         })
@@ -22,8 +22,8 @@ function PageBrowse() {
 
     return (
         <>
-            <div>Browse all submissions</div>
-            <div>
+            <div className='browse-description'>Browse all submissions</div>
+            <div className='art-thumbnails-container'>
                 {displayArt(ART["art"])} 
             </div>
         </>

@@ -9,7 +9,7 @@ function PageUser(props) {
         return data.map((art, index) => {
             return(
                 <div className='art-submission' key={index}>
-                    <img alt='art' src={art} />
+                    <img className='thumbnail' alt='art' src={art} />
                 </div>
             )
         })
@@ -22,7 +22,7 @@ function PageUser(props) {
                     <div className='profile-pic'>
                         <img alt='' src={user["profileimage"]}/>
                     </div>
-                    <h1>{user["username"]}</h1>
+                    <div className='profile-name'>{user["username"]}</div>
                 </div>
                 <div className='art-thumbnails-container'>
                     {displayUserArt(user["art"])}

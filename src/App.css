@@ -11,3 +11,10 @@ html, body {
     background-color: white;
     height: 100%;
 }
+
+.web-page-content-container {
+    max-width: 1260px;
+    background-color: rgb(240, 240, 240);
+    margin: auto;
+    padding-top: 50px;
+}
