@@ -11,9 +11,12 @@ function PageBrowse() {
         return data.map(art => {
             return(
                 <div className='art-submission' key={art.id}>
-                    <Link className='link-to-artist-profile' to={`/user/${art.artistid}`}>
-                        artist: {art.artistid}
-                    </Link>
+                    <div className='link-to-artist-profile'>
+                        art title |
+                        <Link className='link-to-artist-profile' to={`/user/${art.artistid}`}>
+                            | artist {art.artistid}
+                        </Link>
+                    </div>
                     <img className='thumbnail' alt='art' src={art["url"]} />
                 </div>
             )

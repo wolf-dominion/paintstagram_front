@@ -15,4 +15,7 @@
 
 .header-container {
     background-color: #e0e8ff;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
